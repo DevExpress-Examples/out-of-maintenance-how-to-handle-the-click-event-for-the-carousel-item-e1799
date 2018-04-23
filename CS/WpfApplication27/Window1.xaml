@@ -1,0 +1,26 @@
+﻿<Window x:Class="WpfApplication27.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1" Height="339" Width="597" xmlns:dxca="http://schemas.devexpress.com/winfx/2008/xaml/carousel"
+        xmlns:local="clr-namespace:WpfApplication27"
+        xmlns:car="http://schemas.devexpress.com/winfx/2008/xaml/carousel"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <Window.Resources>
+        <local:MyList x:Key="myList"/>
+    </Window.Resources>
+    <Grid>
+        <car:CarouselItemsControl x:Name="carouselItemsControl" ItemsSource="{Binding Source={StaticResource myList}}" >
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <car:CarouselPanel ActivateItemOnClick="True" AttractorPointIndex="2"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Button Content="{Binding Field1}" PreviewMouseDown="Button_PreviewMouseDown"/>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </car:CarouselItemsControl>
+    </Grid>
+
+</Window>
