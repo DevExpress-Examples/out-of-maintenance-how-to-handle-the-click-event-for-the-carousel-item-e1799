@@ -35,12 +35,12 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v11.2" />
-    <Reference Include="DevExpress.Xpf.Carousel.v11.2">
+    <Reference Include="DevExpress.Data.v13.1" />
+    <Reference Include="DevExpress.Xpf.Carousel.v13.1">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpf.Mvvm.v11.2" />
-    <Reference Include="DevExpress.Xpf.Core.v11.2" />
+    <Reference Include="DevExpress.Xpf.Mvvm.v13.1" />
+    <Reference Include="DevExpress.Xpf.Core.v13.1" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
